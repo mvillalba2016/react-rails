@@ -1,6 +1,5 @@
 import { useContext, createContext } from "react";
 import { types, Instance, onSnapshot } from "mobx-state-tree";
-
 import { PostList } from "./PostList";
 
 const RootModel = types.model({
