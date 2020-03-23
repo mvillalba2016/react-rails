@@ -14,10 +14,10 @@ export default (props: any) => {
               />
             : <img
                 src={props.url.replace('amp;s', 's').replace('amp;','')}
-                width={500}
+                height={500}
                 />}
           <p>by {props.author} at <time>{moment.unix(props.created_utc).fromNow()}</time></p>
-          <p>Num comments: {props.num_comments}</p>
+          <p>Number of comments: {props.num_comments}</p>
       </article>
     </Card>
   )

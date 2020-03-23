@@ -14,7 +14,7 @@ export default (props: any) => {
         <Card bp='12'>
           <p style={{ marginBottom: 0 }}>{post.author} <time className='time'>at {moment.unix(post.created_utc).fromNow()}</time></p>
         </Card>
-        <Card bp='3' className='posts-list-container__li__img'>
+        <Card bp='4' className='posts-list-container__li__img'>
           {post.thumbnail === 'self' || post.thumbnail === 'default' ? 
             <img
               src='https://via.placeholder.com/200x60?text=No+thumbnail'
@@ -26,7 +26,7 @@ export default (props: any) => {
                 width={post.thumbnail_width}
                 height={post.thumbnail_height} />}
         </Card>
-        <Card bp='9' className='post-list-container__li__content'>
+        <Card bp='8' className='post-list-container__li__content'>
           <p style={{ marginTop: 0 }}>{post.title}</p>
           <Card className="button-container">
             <Button onClick={() => remove(post.id)} className="button-dismiss">
